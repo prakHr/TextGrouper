@@ -214,7 +214,7 @@ def remove_semantic_outliers(
 def check_meaningfulness(
     list_of_texts,
     classifier,
-    threshold=MEANINGFULNESS_THRESHOLD
+    threshold=MEANINGFULNESS_THRESHOLD-EPSILON
 ):
 
     if not list_of_texts:
